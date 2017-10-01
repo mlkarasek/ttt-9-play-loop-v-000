@@ -37,10 +37,10 @@ end
 
 # Define your play method below
 def play(board)
-  turn = 0
-while turn < 9
+  counter = 0
+while counter < 9
   puts "Last move!"
   turn(board)
-  turn += 1
+  counter += 1
 end
 end
