@@ -36,9 +36,4 @@ def turn(board)
 end
 
 # Define your play method below
-def play(board)
-  positon.to_ibetween?(1,9) && !position_taken?(board, position.to_i-1 + turn = 0
-  while turn , 9
-    turn(board)
-    turn += 1
-end
+
