@@ -8,7 +8,7 @@ def display_board(board)
 end
 
 def input_to_index(user_input)
-  user_input.to_i - 1
+  user_input.to_i-1
 end
 
 def move(board, index, current_player = "X")
@@ -35,9 +35,4 @@ def turn(board)
   end
 end
 
-def play(board)
-  position.to_i.between?(1,9) && !position_taken?(board, position.to_i-1)		 +  turn = 0
-   while turn < 9
-     turn(board)
-     turn += 1
-end
+# Define your play method below
