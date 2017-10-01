@@ -25,10 +25,13 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  input = gets.chomp
+  input = gets.strip
+  index = input_to_index(input)
+  if valid_move?(board, index)
     move(board, index)
     display_board(board)
-
+  else
+    turn(board)
   end
 end
 
@@ -36,6 +39,7 @@ end
 def play(board)
   turn = 0
 while turn < 9
+  puts "Last move!"
   turn(board)
   turn += 1
 end
