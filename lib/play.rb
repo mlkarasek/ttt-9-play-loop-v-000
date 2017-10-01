@@ -37,7 +37,6 @@ end
 
 # Define your play method below
 def play(board)
-  until finished?(board)
-    current_player(board)
+  until over?(board)
     turn (board)
   end
