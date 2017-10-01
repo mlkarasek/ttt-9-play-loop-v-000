@@ -37,6 +37,8 @@ end
 
 # Define your play method below
 def play(board)
-  until over?(board)
+  plays = 0
+  while plays < 0
     turn (board)
+    plays += 1
   end
